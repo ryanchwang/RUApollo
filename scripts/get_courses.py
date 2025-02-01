@@ -4,12 +4,12 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
 
-df = pd.read_csv('subjects.csv', dtype = str)
+df = pd.read_csv('data/subjects.csv', dtype = str)
 n = len(df)
 
 courses = []
 
-for i in n:
+for i in range(n):
 
     scode = df["code"].iloc[i].strip()
     driver = webdriver.Chrome()
