@@ -2,6 +2,8 @@ import subprocess
 
 def scan_bluetooth():
     print("Scanning for Bluetooth devices...")
+
+    #brew install blueutil <-- to install
     
     # Run the blueutil scan command
     result = subprocess.run(["blueutil", "--inquiry"], capture_output=True, text=True)
