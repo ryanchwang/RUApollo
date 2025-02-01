@@ -1,512 +1,512 @@
-    ,description                                                          ,code
-  0 ,Academic Foundations                                                 , 003
-  1 ,Academic Studies                                                     , 005
-  2 ,Academic and Student Development                                     , 907
-  3 ,Accounting                                                           , 010
-  4 ,Administration of Justice                                            , 012
-  5 ,Administrative Studies                                               , 011
-  6 ,Aerospace Engineering                                                , 021
-  7 ,African Studies                                                      , 016
-  8 ,"African, Middle Eastern, and South Asian Languages and Literatures" , 013
-  9 ,Africana Studies                                                     , 014
- 10 ,Aging                                                                , 018
- 11 ,Agricultural Economic Marketing                                      , 030
- 12 ,Agricultural Engineering                                             , 040
- 13 ,Agricultural Microbiology                                            , 045
- 14 ,Agricultural and Natural Resource Management                         , 035
- 15 ,Agriculture and Food Systems                                         , 020
- 16 ,Alcohol Studies                                                      , 047
- 17 ,American Language Studies                                            , 049
- 18 ,American Studies                                                     , 050
- 19 ,Anatomy                                                              , 055
- 20 ,Ancient Mediterranean Civilizations                                  , 059
- 21 ,Ancient and Medieval Civilizations                                   , 060
- 22 ,Anesthesiology                                                       , 064
- 23 ,Animal Pathology                                                     , 065
- 24 ,Animal Science                                                       , 067
- 25 ,Anthropology                                                         , 070
- 26 ,Applied Mathematics                                                  , 642
- 27 ,Applied Physics                                                      , 755
- 28 ,Applied Psychology                                                   , 076
- 29 ,Applied Science                                                      , 073
- 30 ,Arabic Languages                                                     , 074
- 31 ,Archaeology                                                          , 075
- 32 ,Armenian                                                             , 078
- 33 ,Art                                                                  , 080
- 34 ,Art                                                                  , 081
- 35 ,Art History                                                          , 082
- 36 ,Arts Management                                                      , 084
- 37 ,Arts and Sciences                                                    , 090
- 38 ,"Arts, Culture, and Media"                                           , 083
- 39 ,Asian Studies                                                        , 098
- 40 ,Astronomy                                                            , 100
- 41 ,Astrophysics                                                         , 105
- 42 ,Atmospheric Science                                                  , 107
- 43 ,Bacteriology                                                         , 110
- 44 ,Behavioral and Neural Sciences                                       , 112
- 45 ,Biochemistry                                                         , 115
- 46 ,Bioenvironmental Engineering                                         , 116
- 47 ,Bioenvironmental Engineering                                         , 117
- 48 ,Biological Sciences                                                  , 119
- 49 ,Biology                                                              , 120
- 50 ,Biology - Environmental                                              , 123
- 51 ,Biology: Computational and Integrative                               , 121
- 52 ,Biomaps                                                              , 118
- 53 ,Biomaterials and Biofabrication                                      , 133
- 54 ,Biomathematics                                                       , 122
- 55 ,Biomedical Engineering                                               , 125
- 56 ,Biomedical Informatics                                               , 139
- 57 ,Biomedical Sciences                                                  , 132
- 58 ,Biomedical Technology                                                , 124
- 59 ,Bioresource Engineering                                              , 127
- 60 ,Biostatistics                                                        , 114
- 61 ,Biotechnology                                                        , 126
- 62 ,Botany                                                               , 130
- 63 ,Botany and Plant Physiology                                          , 131
- 64 ,Business Administration                                              , 135
- 65 ,Business Analytics                                                   , 141
- 66 ,Business Analytics and Information Technology                        , 136
- 67 ,Business Communication                                               , 142
- 68 ,Business Law                                                         , 140
- 69 ,Business and Science                                                 , 137
- 70 ,Business of Fashion                                                  , 134
- 71 ,"Business, International"                                            , 138
- 72 ,Catalan                                                              , 145
- 73 ,Cell Biology and Neuroscience                                        , 146
- 74 ,Cell and Developmental Biology                                       , 148
- 75 ,Central and East European Studies                                    , 149
- 76 ,Ceramic and Materials Engineering                                    , 150
- 77 ,Chemical Biology                                                     , 158
- 78 ,Chemical and Biochemical Engineering                                 , 155
- 79 ,Chemistry                                                            , 160
- 80 ,Chemistry and Molecular Technology                                   , 161
- 81 ,Childhood Studies                                                    , 163
- 82 ,Chinese                                                              , 165
- 83 ,Chinese Studies                                                      , 170
- 84 ,Cinema Studies                                                       , 175
- 85 ,Civic Engagement                                                     , 178
- 86 ,Civil and Environmental Engineering                                  , 180
- 87 ,Classics                                                             , 190
- 88 ,Clinical Laboratory Science                                          , 191
- 89 ,Clinical Psychology                                                  , 821
- 90 ,Clinical and Translational Sciences                                  , 183
- 91 ,Cognitive Science                                                    , 185
- 92 ,College Teaching                                                     , 186
- 93 ,College and University Leadership                                    , 187
- 94 ,Communication                                                        , 192
- 95 ,Communication and Information Studies                                , 194
- 96 ,Communication and Media Studies                                      , 189
- 97 ,Community Health Outreach                                            , 193
- 98 ,Comparative Literature                                               , 195
- 99 ,Computational Biology                                                , 197
-100 ,Computer Science                                                     , 198
-101 ,Computer and Information Sciences                                    , 196
-102 ,Cooperative Education                                                , 199
-103 ,Core Courses                                                         , 188
-104 ,Creative Writing                                                     , 200
-105 ,Criminal Justice                                                     , 202
-106 ,Dance                                                                , 206
-107 ,Dance                                                                , 203
-108 ,Dance Education                                                      , 207
-109 ,Data Science                                                         , 219
-110 ,Dental Public Health                                                 , 201
-111 ,Dental Science                                                       , 213
-112 ,Dermatology                                                          , 205
-113 ,Design                                                               , 208
-114 ,Digital Studies                                                      , 209
-115 ,Earth System Science                                                 , 218
-116 ,East Asian Languages and Area Studies                                , 214
-117 ,East Asian Languages and Cultures                                    , 217
-118 ,Ecology                                                              , 215
-119 ,Ecology and Natural Resources                                        , 704
-120 ,"Ecology, Evolution and Natural Resources"                           , 216
-121 ,Economics                                                            , 220
-122 ,"Economics, Applied"                                                 , 223
-123 ,Education                                                            , 300
-124 ,Education-Adult and Continuing Ed                                    , 233
-125 ,Education-College Student Affairs                                    , 245
-126 ,Education-Counseling Psychology                                      , 297
-127 ,Education-Counseling Psychology and Dev                              , 298
-128 ,Education-Creative Arts Ed                                           , 259
-129 ,Education-Creative Arts Ed                                           , 270
-130 ,Education-Curriculum Instruction                                     , 320
-131 ,Education-Design of Learning Contexts                                , 262
-132 ,Education-Early Child/Elementary Ed                                  , 251
-133 ,Education-Educ Stats and Measurementnt                               , 291
-134 ,Education-Education Electives                                        , 255
-135 ,"Education-Education, Culture, and Society"                          , 265
-136 ,"Education-Educational Admin, Superv, and Adult Ed"                  , 230
-137 ,Education-Educational Leadership                                     , 260
-138 ,Education-Educational Psychology                                     , 290
-139 ,Education-Elementary Ed                                              , 240
-140 ,Education-English/Language Arts Ed                                   , 252
-141 ,Education-General Elective                                           , 250
-142 ,Education-Gifted Education                                           , 294
-143 ,Education-Higher Education                                           , 507
-144 ,Education-Language Ed                                                , 253
-145 ,"Education-Learning, Cognition, and Dev"                             , 295
-146 ,Education-Literacy Education                                         , 618
-147 ,Education-Mathematics Ed                                             , 254
-148 ,Education-Medical and Health Professions                             , 296
-149 ,Education-Reading                                                    , 299
-150 ,Education-Science Ed                                                 , 256
-151 ,Education-Social Ed                                                  , 257
-152 ,Education-Social and Philosoph Found of Ed                           , 310
-153 ,Education-Special Education                                          , 293
-154 ,Education-Teacher Leadership                                         , 267
-155 ,Education-Vocational/Technical Ed                                    , 288
-156 ,Educational Opportunity Fund                                         , 364
-157 ,Elective Course                                                      , 322
-158 ,Electrical Engineering                                               , 330
-159 ,Electrical and Computer Engineering                                  , 332
-160 ,Electrical and Computer Engineering                                  , 333
-161 ,Emergency Medicine                                                   , 325
-162 ,Endocrinology and Animal Biosciences                                 , 340
-163 ,Energy                                                               , 335
-164 ,Energy Systems                                                       , 346
-165 ,Energy Systems                                                       , 336
-166 ,Engineering Management                                               , 345
-167 ,English                                                              , 350
-168 ,English - American Language Studies                                  , 357
-169 ,English - American Literature                                        , 352
-170 ,English - Composition and Writing                                    , 355
-171 ,English - Creative Writing                                           , 351
-172 ,English - Film Studies                                               , 354
-173 ,English - Literary Theory                                            , 353
-174 ,English - Literature                                                 , 358
-175 ,English - Theories and Methods                                       , 359
-176 ,English as a Second Language                                         , 356
-177 ,Entomology                                                           , 370
-178 ,Entomology and Economic Zoology                                      , 369
-179 ,Entrepreneurship                                                     , 382
-180 ,"Environmental Change, Human Dimension"                              , 378
-181 ,Environmental Engineering                                            , 366
-182 ,Environmental Geology                                                , 380
-183 ,Environmental Planning                                               , 368
-184 ,Environmental Planning and Design                                    , 573
-185 ,Environmental Planning and Geomatics                                 , 372
-186 ,"Environmental Policy, Institutions and Behavior"                    , 374
-187 ,Environmental Sciences                                               , 375
-188 ,Environmental Studies                                                , 381
-189 ,Environmental and Biological Sciences                                , 015
-190 ,Environmental and Business Economics                                 , 373
-191 ,Environmental and Occupational Health                                , 371
-192 ,Environmental and Occupational Medicine                              , 379
-193 ,Epidemiology                                                         , 383
-194 ,Epidemiology & Quantitative                                          , 384
-195 ,Ethics in Business Environment                                       , 522
-196 ,European Studies                                                     , 360
-197 ,Exchange                                                             , 001
-198 ,Exchange Registration                                                , 376
-199 ,Executive MBA Program                                                , 385
-200 ,Exercise Science                                                     , 377
-201 ,Family Health                                                        , 388
-202 ,Family Medicine                                                      , 386
-203 ,Field Work                                                           , 391
-204 ,Film Studies                                                         , 387
-205 ,Filmmaking                                                           , 211
-206 ,Finance                                                              , 390
-207 ,Financial Analysis                                                   , 430
-208 ,Financial Planning                                                   , 393
-209 ,Fisheries Science                                                    , 392
-210 ,Food Science                                                         , 400
-211 ,Food and Business Economics                                          , 395
-212 ,Foreign Languages                                                    , 415
-213 ,Foreign Languages                                                    , 410
-214 ,Forensic Science                                                     , 412
-215 ,French                                                               , 420
-216 ,Gender Studies                                                       , 443
-217 ,General Education Requirements Met                                   , 999
-218 ,General Engineering                                                  , 440
-219 ,Genetics                                                             , 447
-220 ,Genetics & Microbiology                                              , 448
-221 ,Geo-Spatial Information Science                                      , 455
-222 ,Geography                                                            , 450
-223 ,Geological Sciences                                                  , 460
-224 ,German                                                               , 470
-225 ,Global Affairs                                                       , 478
-226 ,Global Sport Business                                                , 475
-227 ,Global Studies                                                       , 480
-228 ,Graduate - Newark                                                    , 485
-229 ,Graduate Student Professional Development                            , 486
-230 ,Graphic Design                                                       , 085
-231 ,Greek                                                                , 490
-232 ,"Greek, Modern"                                                      , 489
-233 ,Health Administration                                                , 501
-234 ,Health Care Organization & Admin                                     , 492
-235 ,Health Communication and Information                                 , 503
-236 ,Health Education & Behavioral Sciences                               , 498
-237 ,Health Education and Behavioral Sciences                             , 493
-238 ,Health Information Management                                        , 504
-239 ,"Health Outcomes, Policy and Economics"                              , 502
-240 ,Health Policy & Admin.                                               , 491
-241 ,Health Sciences                                                      , 499
-242 ,Health Services Management                                           , 497
-243 ,Health Systems and Policy                                            , 494
-244 ,"Health, Physical Ed, Sport, Rec"                                    , 496
-245 ,"Health, Physical Education and Sport Studies"                       , 495
-246 ,Hebraic Studies                                                      , 500
-247 ,Hindi                                                                , 505
-248 ,Historical Methods and Skills                                        , 509
-249 ,History                                                              , 510
-250 ,"History - Africa, Asia, Latin America"                              , 508
-251 ,History - American                                                   , 512
-252 ,History - French                                                     , 513
-253 ,History - General/Comparative                                        , 506
-254 ,"History - World: African, Asian, Latin American"                    , 516
-255 ,Home Economics                                                       , 520
-256 ,Honors Living-Learning Community                                     , 526
-257 ,Honors Program                                                       , 525
-258 ,Horticulture                                                         , 530
-259 ,Hospitality Management                                               , 537
-260 ,Human Ecology                                                        , 532
-261 ,Human Resource Management                                            , 533
-262 ,Human-Computer Interaction                                           , 531
-263 ,Humanities                                                           , 534
-264 ,Hungarian                                                            , 535
-265 ,Industrial Relations and Human Resources                             , 545
-266 ,Industrial and Systems Engineering                                   , 540
-267 ,Informatics                                                          , 543
-268 ,Information Systems                                                  , 548
-269 ,Information Technology                                               , 544
-270 ,Information Technology and Informatics                               , 547
-271 ,Instruction and Research Development                                 , 908
-272 ,Integrative Neuroscience                                             , 546
-273 ,Interdisciplinary - Mason Gross                                      , 557
-274 ,Interdisciplinary Studies                                            , 555
-275 ,Interdisciplinary Studies                                            , 554
-276 ,Interdisciplinary Studies - Arts and Sciences                        , 556
-277 ,Interfunctional                                                      , 621
-278 ,International Business                                               , 553
-279 ,International Business and Business Environment                      , 552
-280 ,International Environmental Studies                                  , 559
-281 ,International Studies                                                , 558
-282 ,International Studies                                                , 549
-283 ,Italian                                                              , 560
-284 ,Japanese                                                             , 565
-285 ,Jazz History and Research                                            , 561
-286 ,Jewish Studies                                                       , 563
-287 ,Journalism                                                           , 570
-288 ,Journalism - Newark                                                  , 086
-289 ,Journalism and Mass Media                                            , 571
-290 ,Journalism and Media Studies                                         , 567
-291 ,Justice Studies                                                      , 564
-292 ,Justice Studies                                                      , 204
-293 ,Kinesiology and Applied Physiology                                   , 572
-294 ,Korean                                                               , 574
-295 ,Labor Studies                                                        , 575
-296 ,Labor Studies and Employment Relations                               , 578
-297 ,Labor and Employment Relations                                       , 579
-298 ,Landscape Architecture                                               , 550
-299 ,Languages and Cultures                                               , 617
-300 ,Latin                                                                , 580
-301 ,Latin American Studies                                               , 590
-302 ,Latino and Hispanic Caribbean Studies                                , 595
-303 ,Law                                                                  , 600
-304 ,Law                                                                  , 601
-305 ,"Law, Professional Skills"                                           , 602
-306 ,Leadership                                                           , 609
-307 ,Leadership Skills                                                    , 607
-308 ,Leadership and Management                                            , 605
-309 ,Liberal Studies                                                      , 606
-310 ,"Library Service, Professional Improvement"                          , 611
-311 ,Library and Information Science                                      , 610
-312 ,Linguistics                                                          , 615
-313 ,Literatures in English                                               , 616
-314 ,Management                                                           , 620
-315 ,Management Information Systems                                       , 625
-316 ,Management Science and Information Systems                           , 623
-317 ,Management and Work                                                  , 624
-318 ,Managerial Economics                                                 , 626
-319 ,Marine Sciences                                                      , 628
-320 ,Marine and Coastal Sciences                                          , 629
-321 ,Marketing                                                            , 630
-322 ,Marketing Analytics and Insights                                     , 632
-323 ,Mason Gross - Arts Online                                            , 631
-324 ,Materials Science and Engineering                                    , 635
-325 ,Materials Science and Engineering                                    , 636
-326 ,Mathematical Science                                                 , 645
-327 ,Mathematics                                                          , 643
-328 ,Mathematics                                                          , 640
-329 ,Mathematics for Teachers                                             , 644
-330 ,Mechanical and Aerospace Engineering                                 , 650
-331 ,Mechanics                                                            , 654
-332 ,Mechanics and Materials Science                                      , 655
-333 ,Media Studies                                                        , 657
-334 ,Medical Ethics and Policy                                            , 652
-335 ,Medical Imaging                                                      , 658
-336 ,Medical Technology                                                   , 660
-337 ,Medicinal Chemistry                                                  , 663
-338 ,Medicine                                                             , 665
-339 ,Medieval Studies                                                     , 667
-340 ,Meteorology                                                          , 670
-341 ,Microbial Biology                                                    , 682
-342 ,Microbiology                                                         , 680
-343 ,Microbiology and Molecular Genetics                                  , 681
-344 ,Middle Eastern Language and Area Studies                             , 683
-345 ,Middle Eastern and Islamic Studies                                   , 685
-346 ,"Migration Studies: Policy, Health and Governance"                   , 687
-347 ,"Military Education, Air Force"                                      , 690
-348 ,"Military Education, Army"                                           , 691
-349 ,"Military Education, Navy"                                           , 692
-350 ,Molecular Biology                                                    , 693
-351 ,Molecular Biology and Biochemistry                                   , 694
-352 ,Molecular Biophysics                                                 , 696
-353 ,Molecular Biosciences                                                , 695
-354 ,Molecular and Cell Biology                                           , 697
-355 ,Multidiscipline                                                      , 689
-356 ,Museum Studies                                                       , 698
-357 ,Music                                                                , 702
-358 ,Music                                                                , 700
-359 ,Music - Newark                                                       , 087
-360 ,Music Technology                                                     , 679
-361 ,"Music, Applied"                                                     , 703
-362 ,"Music, Applied"                                                     , 701
-363 ,Natural Resource Management                                          , 414
-364 ,Neuroscience                                                         , 710
-365 ,Nonprofit Leadership                                                 , 699
-366 ,North American Indian Studies                                        , 706
-367 ,Nursing                                                              , 705
-368 ,Nursing - RN                                                         , 708
-369 ,Nutrition                                                            , 707
-370 ,Nutritional Sciences                                                 , 709
-371 ,OB/Gyn                                                               , 719
-372 ,Oceanography                                                         , 712
-373 ,Operations Management                                                , 716
-374 ,Operations Research                                                  , 711
-375 ,Ophthalmology                                                        , 722
-376 ,Organizational Behavior                                              , 829
-377 ,Organizational Leadership                                            , 713
-378 ,Orthopedic Surgery                                                   , 726
-379 ,Packaging Engineering                                                , 731
-380 ,Pathology                                                            , 727
-381 ,Peace Corps Masters International                                    , 736
-382 ,Peace and Conflict Studies                                           , 735
-383 ,Pediatrics                                                           , 724
-384 ,Perceptual Science                                                   , 714
-385 ,Persian                                                              , 723
-386 ,Pharmaceutical Chemistry                                             , 715
-387 ,Pharmaceutics                                                        , 721
-388 ,Pharmacognosy                                                        , 717
-389 ,Pharmacology                                                         , 728
-390 ,"Pharmacology, Cellular and Molecular"                               , 718
-391 ,Pharmacy                                                             , 720
-392 ,Pharmacy Practice and Administration                                 , 725
-393 ,Pharmacy and Toxicology                                              , 732
-394 ,Philosophy                                                           , 730
-395 ,Physical Education                                                   , 740
-396 ,Physical Medicine and Rehab                                          , 759
-397 ,Physical Therapy                                                     , 742
-398 ,Physician Assistant                                                  , 745
-399 ,Physics                                                              , 750
-400 ,Physiology                                                           , 760
-401 ,Physiology and Integrative Biology                                   , 761
-402 ,Physiology and Neurobiology                                          , 763
-403 ,Planning and Public Policy                                           , 762
-404 ,Plant Biology                                                        , 765
-405 ,Plant Pathology                                                      , 770
-406 ,Plant Physiology                                                     , 780
-407 ,Plant Science                                                        , 776
-408 ,Plant Science and Technology                                         , 778
-409 ,Police Science                                                       , 785
-410 ,"Policy, Health, and Administration"                                 , 775
-411 ,Polish                                                               , 787
-412 ,Political Science                                                    , 790
-413 ,Pomology                                                             , 800
-414 ,Portuguese                                                           , 810
-415 ,Portuguese and Lusophone World Studies                               , 812
-416 ,Pre-Pharmacy                                                         , 002
-417 ,Prevention Science                                                   , 792
-418 ,Professional Accounting                                              , 835
-419 ,Professional Development                                             , 813
-420 ,Professional Occupational Education                                  , 815
-421 ,Professional Psychology                                              , 820
-422 ,Professional Studies                                                 , 817
-423 ,Psychiatric Rehabilitation and Psychology                            , 819
-424 ,Psychiatry                                                           , 825
-425 ,Psychiatry                                                           , 828
-426 ,Psychology                                                           , 830
-427 ,"Psychology, Applied"                                                , 844
-428 ,Public Administration                                                , 834
-429 ,Public Administration and Management                                 , 843
-430 ,"Public Administration, Executive"                                   , 831
-431 ,Public Affairs                                                       , 824
-432 ,Public Health                                                        , 832
-433 ,Public Health Core                                                   , 822
-434 ,Public Health Elective                                               , 823
-435 ,Public Informatics                                                   , 816
-436 ,Public Policy                                                        , 833
-437 ,Public Service                                                       , 827
-438 ,Puerto Rican Studies                                                 , 836
-439 ,Quantitative Biomedicine                                             , 848
-440 ,Quantitative Finance                                                 , 839
-441 ,Quantitative Methods                                                 , 837
-442 ,Quantitative Methods                                                 , 845
-443 ,Quaternary Studies                                                   , 855
-444 ,Radiation Science                                                    , 838
-445 ,Real Estate                                                          , 851
-446 ,Recreation and Leisure Services                                      , 846
-447 ,Religion                                                             , 840
-448 ,Religious Studies                                                    , 841
-449 ,Research - Public Health                                             , 847
-450 ,Rhetoric                                                             , 842
-451 ,Rural Sociology                                                      , 850
-452 ,Russian                                                              , 860
-453 ,Russian Central and European Studies                                 , 859
-454 ,SEBS Internship                                                      , 902
-455 ,Sanitary Engineering                                                 , 870
-456 ,Scheduling                                                           , 868
-457 ,School Psychology                                                    , 826
-458 ,Science                                                              , 890
-459 ,Science and Technology Management                                    , 885
-460 ,"Science, Technology and Society"                                    , 880
-461 ,Secretarial Studies                                                  , 900
-462 ,Sexualities Studies                                                  , 888
-463 ,Slavic and East European Studies                                     , 861
-464 ,Social Justice                                                       , 904
-465 ,Social Sciences                                                      , 905
-466 ,Social Work                                                          , 910
-467 ,Sociology                                                            , 920
-468 ,Soils and Crops                                                      , 930
-469 ,South Asian Studies                                                  , 925
-470 ,Spanish                                                              , 940
-471 ,Speech                                                               , 950
-472 ,Speech and Hearing Sciences in Linguistics                           , 614
-473 ,"Speech, Language and Hearing Sciences"                              , 953
-474 ,Sport Management                                                     , 955
-475 ,Statistics                                                           , 960
-476 ,Statistics - Data Science                                            , 954
-477 ,"Statistics, Financial and Risk Managemen"                           , 958
-478 ,Study Abroad                                                         , 959
-479 ,Supply Chain Analytics                                               , 794
-480 ,Supply Chain Management                                              , 795
-481 ,Supply Chain and Marketing Science                                   , 799
-482 ,Surgery                                                              , 945
-483 ,Swahili                                                              , 956
-484 ,Taxation                                                             , 962
-485 ,Teacher Preparation                                                  , 964
-486 ,Teaching Assistant                                                   , 957
-487 ,Theater                                                              , 965
-488 ,Theater - Newark                                                     , 088
-489 ,Theater Arts                                                         , 966
-490 ,Thesis                                                               , 961
-491 ,Toxicology                                                           , 963
-492 ,Turkish                                                              , 973
-493 ,Twi                                                                  , 974
-494 ,Ukranian                                                             , 967
-495 ,Urban & Environmental Health                                         , 968
-496 ,Urban Education                                                      , 301
-497 ,Urban Health Administration                                          , 969
-498 ,Urban Planning and Design                                            , 971
-499 ,Urban Planning and Policy Development                                , 970
-500 ,Urban Secondary Education                                            , 978
-501 ,Urban Studies and Community Development                              , 975
-502 ,Urban Systems                                                        , 977
-503 ,Vegetable Crops                                                      , 980
-504 ,Video Production - Newark                                            , 089
-505 ,Walt Whitman Studies                                                 , 982
-506 ,Wildlife Conservation                                                , 985
-507 ,"Women's, Gender, and Sexuality Studies"                             , 988
-508 ,World Languages                                                      , 991
-509 ,Writing                                                              , 989
-510 ,Zoology                                                              , 990
+,description,code
+0,Academic Foundations,003
+1,Academic Studies,005
+2,Academic and Student Development,907
+3,Accounting,010
+4,Administration of Justice,012
+5,Administrative Studies,011
+6,Aerospace Engineering,021
+7,African Studies,016
+8,"African, Middle Eastern, and South Asian Languages and Literatures",013
+9,Africana Studies,014
+10,Aging,018
+11,Agricultural Economic Marketing,030
+12,Agricultural Engineering,040
+13,Agricultural Microbiology,045
+14,Agricultural and Natural Resource Management,035
+15,Agriculture and Food Systems,020
+16,Alcohol Studies,047
+17,American Language Studies,049
+18,American Studies,050
+19,Anatomy,055
+20,Ancient Mediterranean Civilizations,059
+21,Ancient and Medieval Civilizations,060
+22,Anesthesiology,064
+23,Animal Pathology,065
+24,Animal Science,067
+25,Anthropology,070
+26,Applied Mathematics,642
+27,Applied Physics,755
+28,Applied Psychology,076
+29,Applied Science,073
+30,Arabic Languages,074
+31,Archaeology,075
+32,Armenian,078
+33,Art,080
+34,Art,081
+35,Art History,082
+36,Arts Management,084
+37,Arts and Sciences,090
+38,"Arts, Culture, and Media",083
+39,Asian Studies,098
+40,Astronomy,100
+41,Astrophysics,105
+42,Atmospheric Science,107
+43,Bacteriology,110
+44,Behavioral and Neural Sciences,112
+45,Biochemistry,115
+46,Bioenvironmental Engineering,116
+47,Bioenvironmental Engineering,117
+48,Biological Sciences,119
+49,Biology,120
+50,Biology - Environmental,123
+51,Biology: Computational and Integrative,121
+52,Biomaps,118
+53,Biomaterials and Biofabrication,133
+54,Biomathematics,122
+55,Biomedical Engineering,125
+56,Biomedical Informatics,139
+57,Biomedical Sciences,132
+58,Biomedical Technology,124
+59,Bioresource Engineering,127
+60,Biostatistics,114
+61,Biotechnology,126
+62,Botany,130
+63,Botany and Plant Physiology,131
+64,Business Administration,135
+65,Business Analytics,141
+66,Business Analytics and Information Technology,136
+67,Business Communication,142
+68,Business Law,140
+69,Business and Science,137
+70,Business of Fashion,134
+71,"Business, International",138
+72,Catalan,145
+73,Cell Biology and Neuroscience,146
+74,Cell and Developmental Biology,148
+75,Central and East European Studies,149
+76,Ceramic and Materials Engineering,150
+77,Chemical Biology,158
+78,Chemical and Biochemical Engineering,155
+79,Chemistry,160
+80,Chemistry and Molecular Technology,161
+81,Childhood Studies,163
+82,Chinese,165
+83,Chinese Studies,170
+84,Cinema Studies,175
+85,Civic Engagement,178
+86,Civil and Environmental Engineering,180
+87,Classics,190
+88,Clinical Laboratory Science,191
+89,Clinical Psychology,821
+90,Clinical and Translational Sciences,183
+91,Cognitive Science,185
+92,College Teaching,186
+93,College and University Leadership,187
+94,Communication,192
+95,Communication and Information Studies,194
+96,Communication and Media Studies,189
+97,Community Health Outreach,193
+98,Comparative Literature,195
+99,Computational Biology,197
+100,Computer Science,198
+101,Computer and Information Sciences,196
+102,Cooperative Education,199
+103,Core Courses,188
+104,Creative Writing,200
+105,Criminal Justice,202
+106,Dance,206
+107,Dance,203
+108,Dance Education,207
+109,Data Science,219
+110,Dental Public Health,201
+111,Dental Science,213
+112,Dermatology,205
+113,Design,208
+114,Digital Studies,209
+115,Earth System Science,218
+116,East Asian Languages and Area Studies,214
+117,East Asian Languages and Cultures,217
+118,Ecology,215
+119,Ecology and Natural Resources,704
+120,"Ecology, Evolution and Natural Resources",216
+121,Economics,220
+122,"Economics, Applied",223
+123,Education,300
+124,Education-Adult and Continuing Ed,233
+125,Education-College Student Affairs,245
+126,Education-Counseling Psychology,297
+127,Education-Counseling Psychology and Dev,298
+128,Education-Creative Arts Ed,259
+129,Education-Creative Arts Ed,270
+130,Education-Curriculum Instruction,320
+131,Education-Design of Learning Contexts,262
+132,Education-Early Child/Elementary Ed,251
+133,Education-Educ Stats and Measurementnt,291
+134,Education-Education Electives,255
+135,"Education-Education, Culture, and Society",265
+136,"Education-Educational Admin, Superv, and Adult Ed",230
+137,Education-Educational Leadership,260
+138,Education-Educational Psychology,290
+139,Education-Elementary Ed,240
+140,Education-English/Language Arts Ed,252
+141,Education-General Elective,250
+142,Education-Gifted Education,294
+143,Education-Higher Education,507
+144,Education-Language Ed,253
+145,"Education-Learning, Cognition, and Dev",295
+146,Education-Literacy Education,618
+147,Education-Mathematics Ed,254
+148,Education-Medical and Health Professions,296
+149,Education-Reading,299
+150,Education-Science Ed,256
+151,Education-Social Ed,257
+152,Education-Social and Philosoph Found of Ed,310
+153,Education-Special Education,293
+154,Education-Teacher Leadership,267
+155,Education-Vocational/Technical Ed,288
+156,Educational Opportunity Fund,364
+157,Elective Course,322
+158,Electrical Engineering,330
+159,Electrical and Computer Engineering,332
+160,Electrical and Computer Engineering,333
+161,Emergency Medicine,325
+162,Endocrinology and Animal Biosciences,340
+163,Energy,335
+164,Energy Systems,346
+165,Energy Systems,336
+166,Engineering Management,345
+167,English,350
+168,English - American Language Studies,357
+169,English - American Literature,352
+170,English - Composition and Writing,355
+171,English - Creative Writing,351
+172,English - Film Studies,354
+173,English - Literary Theory,353
+174,English - Literature,358
+175,English - Theories and Methods,359
+176,English as a Second Language,356
+177,Entomology,370
+178,Entomology and Economic Zoology,369
+179,Entrepreneurship,382
+180,"Environmental Change, Human Dimension",378
+181,Environmental Engineering,366
+182,Environmental Geology,380
+183,Environmental Planning,368
+184,Environmental Planning and Design,573
+185,Environmental Planning and Geomatics,372
+186,"Environmental Policy, Institutions and Behavior",374
+187,Environmental Sciences,375
+188,Environmental Studies,381
+189,Environmental and Biological Sciences,015
+190,Environmental and Business Economics,373
+191,Environmental and Occupational Health,371
+192,Environmental and Occupational Medicine,379
+193,Epidemiology,383
+194,Epidemiology & Quantitative,384
+195,Ethics in Business Environment,522
+196,European Studies,360
+197,Exchange,001
+198,Exchange Registration,376
+199,Executive MBA Program,385
+200,Exercise Science,377
+201,Family Health,388
+202,Family Medicine,386
+203,Field Work,391
+204,Film Studies,387
+205,Filmmaking,211
+206,Finance,390
+207,Financial Analysis,430
+208,Financial Planning,393
+209,Fisheries Science,392
+210,Food Science,400
+211,Food and Business Economics,395
+212,Foreign Languages,415
+213,Foreign Languages,410
+214,Forensic Science,412
+215,French,420
+216,Gender Studies,443
+217,General Education Requirements Met,999
+218,General Engineering,440
+219,Genetics,447
+220,Genetics & Microbiology,448
+221,Geo-Spatial Information Science,455
+222,Geography,450
+223,Geological Sciences,460
+224,German,470
+225,Global Affairs,478
+226,Global Sport Business,475
+227,Global Studies,480
+228,Graduate - Newark,485
+229,Graduate Student Professional Development,486
+230,Graphic Design,085
+231,Greek,490
+232,"Greek, Modern",489
+233,Health Administration,501
+234,Health Care Organization & Admin,492
+235,Health Communication and Information,503
+236,Health Education & Behavioral Sciences,498
+237,Health Education and Behavioral Sciences,493
+238,Health Information Management,504
+239,"Health Outcomes, Policy and Economics",502
+240,Health Policy & Admin.,491
+241,Health Sciences,499
+242,Health Services Management,497
+243,Health Systems and Policy,494
+244,"Health, Physical Ed, Sport, Rec",496
+245,"Health, Physical Education and Sport Studies",495
+246,Hebraic Studies,500
+247,Hindi,505
+248,Historical Methods and Skills,509
+249,History,510
+250,"History - Africa, Asia, Latin America",508
+251,History - American,512
+252,History - French,513
+253,History - General/Comparative,506
+254,"History - World: African, Asian, Latin American",516
+255,Home Economics,520
+256,Honors Living-Learning Community,526
+257,Honors Program,525
+258,Horticulture,530
+259,Hospitality Management,537
+260,Human Ecology,532
+261,Human Resource Management,533
+262,Human-Computer Interaction,531
+263,Humanities,534
+264,Hungarian,535
+265,Industrial Relations and Human Resources,545
+266,Industrial and Systems Engineering,540
+267,Informatics,543
+268,Information Systems,548
+269,Information Technology,544
+270,Information Technology and Informatics,547
+271,Instruction and Research Development,908
+272,Integrative Neuroscience,546
+273,Interdisciplinary - Mason Gross,557
+274,Interdisciplinary Studies,555
+275,Interdisciplinary Studies,554
+276,Interdisciplinary Studies - Arts and Sciences,556
+277,Interfunctional,621
+278,International Business,553
+279,International Business and Business Environment,552
+280,International Environmental Studies,559
+281,International Studies,558
+282,International Studies,549
+283,Italian,560
+284,Japanese,565
+285,Jazz History and Research,561
+286,Jewish Studies,563
+287,Journalism,570
+288,Journalism - Newark,086
+289,Journalism and Mass Media,571
+290,Journalism and Media Studies,567
+291,Justice Studies,564
+292,Justice Studies,204
+293,Kinesiology and Applied Physiology,572
+294,Korean,574
+295,Labor Studies,575
+296,Labor Studies and Employment Relations,578
+297,Labor and Employment Relations,579
+298,Landscape Architecture,550
+299,Languages and Cultures,617
+300,Latin,580
+301,Latin American Studies,590
+302,Latino and Hispanic Caribbean Studies,595
+303,Law,600
+304,Law,601
+305,"Law, Professional Skills",602
+306,Leadership,609
+307,Leadership Skills,607
+308,Leadership and Management,605
+309,Liberal Studies,606
+310,"Library Service, Professional Improvement",611
+311,Library and Information Science,610
+312,Linguistics,615
+313,Literatures in English,616
+314,Management,620
+315,Management Information Systems,625
+316,Management Science and Information Systems,623
+317,Management and Work,624
+318,Managerial Economics,626
+319,Marine Sciences,628
+320,Marine and Coastal Sciences,629
+321,Marketing,630
+322,Marketing Analytics and Insights,632
+323,Mason Gross - Arts Online,631
+324,Materials Science and Engineering,635
+325,Materials Science and Engineering,636
+326,Mathematical Science,645
+327,Mathematics,643
+328,Mathematics,640
+329,Mathematics for Teachers,644
+330,Mechanical and Aerospace Engineering,650
+331,Mechanics,654
+332,Mechanics and Materials Science,655
+333,Media Studies,657
+334,Medical Ethics and Policy,652
+335,Medical Imaging,658
+336,Medical Technology,660
+337,Medicinal Chemistry,663
+338,Medicine,665
+339,Medieval Studies,667
+340,Meteorology,670
+341,Microbial Biology,682
+342,Microbiology,680
+343,Microbiology and Molecular Genetics,681
+344,Middle Eastern Language and Area Studies,683
+345,Middle Eastern and Islamic Studies,685
+346,"Migration Studies: Policy, Health and Governance",687
+347,"Military Education, Air Force",690
+348,"Military Education, Army",691
+349,"Military Education, Navy",692
+350,Molecular Biology,693
+351,Molecular Biology and Biochemistry,694
+352,Molecular Biophysics,696
+353,Molecular Biosciences,695
+354,Molecular and Cell Biology,697
+355,Multidiscipline,689
+356,Museum Studies,698
+357,Music,702
+358,Music,700
+359,Music - Newark,087
+360,Music Technology,679
+361,"Music, Applied",703
+362,"Music, Applied",701
+363,Natural Resource Management,414
+364,Neuroscience,710
+365,Nonprofit Leadership,699
+366,North American Indian Studies,706
+367,Nursing,705
+368,Nursing - RN,708
+369,Nutrition,707
+370,Nutritional Sciences,709
+371,OB/Gyn,719
+372,Oceanography,712
+373,Operations Management,716
+374,Operations Research,711
+375,Ophthalmology,722
+376,Organizational Behavior,829
+377,Organizational Leadership,713
+378,Orthopedic Surgery,726
+379,Packaging Engineering,731
+380,Pathology,727
+381,Peace Corps Masters International,736
+382,Peace and Conflict Studies,735
+383,Pediatrics,724
+384,Perceptual Science,714
+385,Persian,723
+386,Pharmaceutical Chemistry,715
+387,Pharmaceutics,721
+388,Pharmacognosy,717
+389,Pharmacology,728
+390,"Pharmacology, Cellular and Molecular",718
+391,Pharmacy,720
+392,Pharmacy Practice and Administration,725
+393,Pharmacy and Toxicology,732
+394,Philosophy,730
+395,Physical Education,740
+396,Physical Medicine and Rehab,759
+397,Physical Therapy,742
+398,Physician Assistant,745
+399,Physics,750
+400,Physiology,760
+401,Physiology and Integrative Biology,761
+402,Physiology and Neurobiology,763
+403,Planning and Public Policy,762
+404,Plant Biology,765
+405,Plant Pathology,770
+406,Plant Physiology,780
+407,Plant Science,776
+408,Plant Science and Technology,778
+409,Police Science,785
+410,"Policy, Health, and Administration",775
+411,Polish,787
+412,Political Science,790
+413,Pomology,800
+414,Portuguese,810
+415,Portuguese and Lusophone World Studies,812
+416,Pre-Pharmacy,002
+417,Prevention Science,792
+418,Professional Accounting,835
+419,Professional Development,813
+420,Professional Occupational Education,815
+421,Professional Psychology,820
+422,Professional Studies,817
+423,Psychiatric Rehabilitation and Psychology,819
+424,Psychiatry,825
+425,Psychiatry,828
+426,Psychology,830
+427,"Psychology, Applied",844
+428,Public Administration,834
+429,Public Administration and Management,843
+430,"Public Administration, Executive",831
+431,Public Affairs,824
+432,Public Health,832
+433,Public Health Core,822
+434,Public Health Elective,823
+435,Public Informatics,816
+436,Public Policy,833
+437,Public Service,827
+438,Puerto Rican Studies,836
+439,Quantitative Biomedicine,848
+440,Quantitative Finance,839
+441,Quantitative Methods,837
+442,Quantitative Methods,845
+443,Quaternary Studies,855
+444,Radiation Science,838
+445,Real Estate,851
+446,Recreation and Leisure Services,846
+447,Religion,840
+448,Religious Studies,841
+449,Research - Public Health,847
+450,Rhetoric,842
+451,Rural Sociology,850
+452,Russian,860
+453,Russian Central and European Studies,859
+454,SEBS Internship,902
+455,Sanitary Engineering,870
+456,Scheduling,868
+457,School Psychology,826
+458,Science,890
+459,Science and Technology Management,885
+460,"Science, Technology and Society",880
+461,Secretarial Studies,900
+462,Sexualities Studies,888
+463,Slavic and East European Studies,861
+464,Social Justice,904
+465,Social Sciences,905
+466,Social Work,910
+467,Sociology,920
+468,Soils and Crops,930
+469,South Asian Studies,925
+470,Spanish,940
+471,Speech,950
+472,Speech and Hearing Sciences in Linguistics,614
+473,"Speech, Language and Hearing Sciences",953
+474,Sport Management,955
+475,Statistics,960
+476,Statistics - Data Science,954
+477,"Statistics, Financial and Risk Managemen",958
+478,Study Abroad,959
+479,Supply Chain Analytics,794
+480,Supply Chain Management,795
+481,Supply Chain and Marketing Science,799
+482,Surgery,945
+483,Swahili,956
+484,Taxation,962
+485,Teacher Preparation,964
+486,Teaching Assistant,957
+487,Theater,965
+488,Theater - Newark,088
+489,Theater Arts,966
+490,Thesis,961
+491,Toxicology,963
+492,Turkish,973
+493,Twi,974
+494,Ukranian,967
+495,Urban & Environmental Health,968
+496,Urban Education,301
+497,Urban Health Administration,969
+498,Urban Planning and Design,971
+499,Urban Planning and Policy Development,970
+500,Urban Secondary Education,978
+501,Urban Studies and Community Development,975
+502,Urban Systems,977
+503,Vegetable Crops,980
+504,Video Production - Newark,089
+505,Walt Whitman Studies,982
+506,Wildlife Conservation,985
+507,"Women's, Gender, and Sexuality Studies",988
+508,World Languages,991
+509,Writing,989
+510,Zoology,990
