@@ -1,30 +1,14 @@
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
 
-driver = webdriver.Chrome()
-#soc = Schedule of Classes
-socDriver = driver.get("https://classes.rutgers.edu/soc/#home")
+uri = "mongodb+srv://am3567:PLerxKuO7NieHTs9@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
 
-# termInput = input("What term?: ")
-# termLocation = input("What campus?: ")
-# termLevel = input("What level?: ")
+# Create a new client and connect to the server
+client = MongoClient(uri, server_api=ServerApi('1'))
 
-termElement = driver.find_element(By.ID, "FALL_SPRING_1_INPUT")
-locationElement = driver.find_element(By.ID, "campus_NB")
-levelElement = driver.find_element(By.ID, "level_U")
-
-termElement.click()
-locationElement.click()
-levelElement.click()
-
-
-driver.find_element(By.ID, "continueButton")
-
-
-
-
-
-
-
-
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
