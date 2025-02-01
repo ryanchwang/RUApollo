@@ -11,6 +11,7 @@ courses = []
 
 for i in range(n):
 
+    #scode = subject code
     scode = df["code"].iloc[i].strip()
     driver = webdriver.Chrome()
     url = f'https://classes.rutgers.edu/soc/#courses?subject={scode}&semester=12025&campus=NB&level=U'
