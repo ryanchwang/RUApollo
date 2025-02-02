@@ -17,7 +17,8 @@ df = pd.read_csv('data/subjects.csv', dtype=str)
 n = len(df)
 
 # MongoDB URI and connection
-uri = "mongodb+srv://am3567:PLerxKuO7NieHTs9@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
+#uri = "mongodb+srv://am3567:PLerxKuO7NieHTs9@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
+uri = "mongodb+srv://ryanchwang:aO0oL36ytNgOpNyH@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
 client = AsyncIOMotorClient(uri)
 
 # Async MongoDB client function
