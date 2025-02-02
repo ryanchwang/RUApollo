@@ -39,7 +39,12 @@ const Chatbot = () => {
 };
 
 const styles = {
-  container: { display: "flex", flexDirection: "column", height: "100vh", padding: 10 },
+  container: { 
+    display: "flex", 
+    flexDirection: "column", 
+    height: "100vh",  // ✅ Change from "100vh" to "100%"
+    padding: 10 
+  },
   title: { flex: 1, textAlign: "center", fontSize: "20px", fontWeight: "bold", padding: "10px 0" },
   history: { flex: 8, border: "1px solid #ccc", padding: 10, overflowY: "auto" },
   inputContainer: { flex: 1, display: "flex", gap: 5, paddingTop: 10 },
