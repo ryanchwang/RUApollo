@@ -2,10 +2,10 @@ from pymongo import MongoClient
 
 #uri = "mongodb+srv://am3567:PLerxKuO7NieHTs9@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
 uri = "mongodb+srv://ryanchwang:aO0oL36ytNgOpNyH@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
-client = MongoClient(uri)
+client = MongoClient(uri, tlsAllowInvalidCertificates=True)
 
-source_db = client["Subjects_New"]
-destination_db = client["Subjects_Final"]
+source_db = client["Subjects_Final"]
+destination_db = client["Subjects_Embedding"]
 
 # Loop through collections and copy data
 for collection_name in source_db.list_collection_names():
