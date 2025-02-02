@@ -79,4 +79,4 @@ const Dropdown = ({ id, options }) => {
   );
 };
 
-export default App;
+export default Dropdown;

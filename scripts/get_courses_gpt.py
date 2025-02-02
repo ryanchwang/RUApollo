@@ -92,7 +92,7 @@ async def main():
         futures = []
 
         # Submit scraping tasks for each subject
-        for i in range(n):
+        for i in range(250,n):
             scode = df["code"].iloc[i].strip()
             futures.append(executor.submit(scrape_data_for_subject, i, scode))
 
