@@ -34,10 +34,30 @@ class DeepSeekModel:
                         The plan should include suggested activities, readings, or assessments for each week.
                         Do not invent any fictional content beyond the outline; it should be realistic and based on typical course structures.
                         Make sure the tone remains exciting, and the course outline is applicable to real-world use cases of the subject.
+                                               1. Course Description:
+
+                        Begin with a brief, engaging introduction to the course, highlighting its importance and applications.
+                        Focus on the real-world relevance of the course and what skills students will gain.
+                        Keep the description brief and exciting.'''
+        my_model = "qwen2:0.5b"
+        my_prompt = f"""
+
+                        I would like you to generate a detailed course description and outline for {course_id}: a {course_title} course with {credits} from the {department} department. The prerequisites are {prereqs}. Please do not create any additional information beyond what is specified. Omit anything not provided or uncertain.
+
+ 
+
+                        2. Course Outline:
+
+                        Provide a high-level outline of key topics to be covered in the course.
+                        Ensure each topic is relevant and supports the goal of the course.
+                        
                         
                     """.replace("\n", "")
         
+
+        
         try:
+
             # Interact with the DeepSeek-R1 model via Ollama
             print("starting")
             time1 = time.time()
