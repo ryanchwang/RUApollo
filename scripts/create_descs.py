@@ -16,7 +16,7 @@ from deepseek import DeepSeekModel
 # MongoDB URI and connection
 #uri = "mongodb+srv://ryanchwang:aO0oL36ytNgOpNyH@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
 uri = "mongodb+srv://ryanchwang:aO0oL36ytNgOpNyH@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
-client = MongoClient(uri)
+client = MongoClient(uri, tlsAllowInvalidCertificates=True)
 
 db = client["Subjects_Copy"]
 collections = db.list_collection_names()[1:]
@@ -35,7 +35,7 @@ def create_course_desc_and_outline(collection_name, stuff_in_collection):
         print(collection_name, course_title, "done!")
 
 # Main async function to handle concurrent scraping and MongoDB insertions
-async def main():
+def main():
     # ThreadPoolExecutor for concurrent scraping
     with ThreadPoolExecutor(max_workers=5) as executor:
         # Create a pool of WebDriver instances
@@ -46,7 +46,7 @@ async def main():
             collection = db[collection_name]  # Access the collection
 
             print("starting collection", collection_name)
-            futures.append(executor.submit(create_course_desc_and_outline, collection_name, collection.find()))
+            create_course_desc_and_outline(collection_name, collection.find())
 
 # Run the async main function
-asyncio.run(main())
+main()

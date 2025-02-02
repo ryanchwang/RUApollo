@@ -9,7 +9,7 @@ class DeepSeekModel:
         """
         Use DeepSeek-R1 model to generate a syllabus based on course title and abstract info.
         """
-        my_model = "tinyllama:latest"
+        my_model = "qwen2:0.5b"
         my_prompt = f"""
 
                         I would like you to generate a detailed course description and outline for {course_id}: a {course_title} course with {credits} from the {department} department. The prerequisites are {prereqs}. Please do not create any additional information beyond what is specified. Omit anything not provided or uncertain.
@@ -40,9 +40,8 @@ class DeepSeekModel:
             # Interact with the DeepSeek-R1 model via Ollama
             response = ollama.generate(
                 model=my_model, 
-                prompt=my_prompt,
-                #options={"num_tokens": 200}
-                )
+                prompt= my_prompt,
+            )
         
             # Extract only the response text
             if response and "response" in response:
