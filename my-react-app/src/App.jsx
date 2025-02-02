@@ -7,7 +7,6 @@ export default function App() {
   const [selectedCourse, setSelectedCourse] = useState(null);
   console.log("SelectedCourse:", selectedCourse);
   const handleCourseSelect = (course) => {
-    console.log("Selected course:", course);
     setSelectedCourse(course);
   };
 
