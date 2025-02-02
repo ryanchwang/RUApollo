@@ -1,6 +1,7 @@
 import React from "react";
 import MainContent from "./components/MainContent";
 import Chatbot from "./components/Chatbot";
+import LeftBar from "./components/Sidebar";
 
 export default function App() {
   return (
@@ -8,7 +9,7 @@ export default function App() {
       {/* Sidebar (Left Column - Takes 2/12 width) */}
       <div className="col-span-2 bg-gray-100 p-4">
         <h2 className="text-lg font-bold">Sidebar</h2>
-        {/* Add sidebar content here */}
+        <LeftBar />
       </div>
 
       {/* Main Content (Middle Column - Takes 4/12 width) */}
