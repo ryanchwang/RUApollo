@@ -57,9 +57,13 @@ const styles = {
     alignItems: "center",          // Centers content vertically
   },
   rightColumn: {
+    position: "fixed",
+    top: "15px",                        // Stick to the top
+    right: "15px",
     flex: 3,                      // Takes 3/12 width
     backgroundColor: "#e6f7ff",   // Chatbot color
     padding: "10px",
-    height: "95vh",               // Ensures the height is the same as sidebar
+    height: "95vh",
+    width: "15vw",
   },
 };
