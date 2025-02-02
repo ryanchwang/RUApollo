@@ -26,7 +26,6 @@ export default function LeftBar() {
 
   return (
     <div>
-      <h1>React Dropdown Example</h1>
       {courseData.length === 0 ? (
         <p>No courses found.</p>
       ) : (

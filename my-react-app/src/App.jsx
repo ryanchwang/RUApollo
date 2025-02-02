@@ -8,7 +8,7 @@ export default function App() {
     <div style={styles.container}>
       {/* Sidebar (Left Column - Takes 3/12 width) */}
       <div style={styles.leftColumn}>
-        <h2>Sidebar</h2>
+        <h2>Course Catalog</h2>
         <LeftBar />
       </div>
 
@@ -33,12 +33,12 @@ const styles = {
     padding: "10px",
   },
   leftColumn: {
-    flex: 3,                      // Takes 3/12 width
+    flex: 2,                      // Takes 3/12 width
     backgroundColor: "#f3f3f3",   // Sidebar color
     padding: "10px",
   },
   middleColumn: {
-    flex: 6,                      // Takes 6/12 width
+    flex: 7,                      // Takes 6/12 width
     backgroundColor: "white",     // Main content color
     padding: "10px",
   },
