@@ -47,6 +47,7 @@ const styles = {
     padding: "10px",
   },
   rightColumn: {
+    display: "flex", 
     flex: 3,                      // Takes 3/12 width
     backgroundColor: "#e6f7ff",   // Chatbot color
     padding: "10px",
