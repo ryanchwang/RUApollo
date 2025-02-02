@@ -9,18 +9,28 @@ const Chatbot = () => {
 
   // Function to fetch response from Flask backend
   async function sendMessageToLLM(userMessage) {
-    const response = await fetch(`${process.env.REACT_APP_API_URL}/chat`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        message: userMessage,
-      }),
-    });
+    try {
+      console.log("tried to send")
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/chat`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: userMessage,
+        }),
+      });
 
-    const data = await response.json();
-    return data.response;  // The response from the Flask API
+      if (!response.ok) {
+        throw new Error("Network response was not ok.");
+      }
+
+      const data = await response.json();
+      return data.response;  // The response from the Flask API
+    } catch (error) {
+      console.error("Error:", error);
+      return "Sorry, something went wrong.";
+    }
   }
 
   // Send message and get chatbot response
@@ -45,6 +55,14 @@ const Chatbot = () => {
     setInput("");
   };
 
+  // Handle the "Enter" key press for submitting the message
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Prevent form submission
+      sendMessage();
+    }
+  };
+
   return (
     <div style={styles.container}>
       {/* 1️⃣ Title Row */}
@@ -67,6 +85,7 @@ const Chatbot = () => {
           style={styles.input}
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyDown={handleKeyDown} // Add the event handler for "Enter" key
           placeholder="Type a message..."
         />
         <button onClick={sendMessage}>Send</button>
