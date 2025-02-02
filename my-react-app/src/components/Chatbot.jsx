@@ -1,18 +1,49 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import React, { useState } from "react";
 
-export default function Chatbot() {
+const Chatbot = () => {
+  const [messages, setMessages] = useState([{ id: 1, text: "Hello! How can I help?" }]);
+  const [input, setInput] = useState("");
+
+  const sendMessage = () => {
+    if (!input.trim()) return;
+    setMessages([...messages, { id: messages.length + 1, text: input }]);
+    setInput("");
+  };
+
   return (
-    <aside className="col-span-3 bg-gray-100 p-4 rounded-2xl flex flex-col">
-      <h2 className="text-lg font-semibold mb-4">Chatbot</h2>
-      <Card className="flex-grow mb-4 overflow-auto">
-        <CardContent className="p-4 text-sm text-gray-600">Chatbot messages appear here.</CardContent>
-      </Card>
-      <div className="flex gap-2">
-        <Input placeholder="Type a message..." className="flex-grow" />
-        <Button>Send</Button>
+    <div style={styles.container}>
+      {/* 1️⃣ Title Row */}
+      <div style={styles.title}>
+        <h2>Chat</h2>
       </div>
-    </aside>
+
+      {/* 2️⃣ Message History Row */}
+      <div style={styles.history}>
+        {messages.map((msg) => (
+          <p key={msg.id}>{msg.text}</p>
+        ))}
+      </div>
+
+      {/* 3️⃣ Input Row */}
+      <div style={styles.inputContainer}>
+        <input 
+          style={styles.input} 
+          value={input} 
+          onChange={(e) => setInput(e.target.value)} 
+          placeholder="Type a message..."
+        />
+        <button onClick={sendMessage}>Send</button>
+      </div>
+    </div>
   );
-}
+};
+
+const styles = {
+  container: { display: "flex", flexDirection: "column", height: "100vh", padding: 10 },
+  title: { flex: 1, textAlign: "center", fontSize: "20px", fontWeight: "bold", padding: "10px 0" },
+  history: { flex: 8, border: "1px solid #ccc", padding: 10, overflowY: "auto" },
+  inputContainer: { flex: 1, display: "flex", gap: 5, paddingTop: 10 },
+  input: { flex: 1, padding: 5, border: "1px solid #ccc" },
+};
+
+export default Chatbot;
