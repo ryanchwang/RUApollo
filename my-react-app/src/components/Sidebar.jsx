@@ -2,7 +2,7 @@ import Dropdown from "./Dropdown";
 import React, { useState, useEffect } from 'react';
 
 
-export default function SideBar() {
+export default function SideBar({onCourseSelect}) {
   const [courseData, setCourseData] = useState([]);
   const [activeDropdown, setActiveDropdown] = useState(null); // Track active dropdown
 
@@ -26,7 +26,10 @@ export default function SideBar() {
   }, []);
 
   // Define the onCourseSelect function
-  const onCourseSelect = (selectedCourse) => {
+  const onCourseSelectdd = (selectedCourse) => {
+    if (onCourseSelect){
+      onCourseSelect(selectedCourse)
+    }
     console.log("Course selected:", selectedCourse);
     // You can add further logic here, such as setting the selected course in the state
   };
@@ -40,9 +43,9 @@ export default function SideBar() {
           <div key={index}>
             <Dropdown
               id={item.collectionName}
-              options={item.courseTitles}
+              options={item.courses}
               text={item.collectionName}
-              onSelect={onCourseSelect} // Ensure onSelect is passed
+              onSelect={onCourseSelectdd} // Ensure onSelect is passed
               setActiveDropdown={setActiveDropdown} // Fix setActiveDropdown issue
             />
           </div>

@@ -12,7 +12,7 @@ const Dropdown = ({ id, options, text, onSelect, setActiveDropdown }) => {
   };
 
   const handleSelect = (value) => {
-    setSelectedValue(value);
+    localStorage.setItem("selectedCourse", value);
     setIsOpen(false);
     if (setActiveDropdown) {
       setActiveDropdown(null);
@@ -34,6 +34,7 @@ const Dropdown = ({ id, options, text, onSelect, setActiveDropdown }) => {
         marginBottom: isOpen ? `${dropdownHeight + 40}px` : "20px", // Push content below down
         transition: "margin-bottom 0.3s ease",
         position: "relative",
+        color: "#8B0000"
       }}
     >
       <button
