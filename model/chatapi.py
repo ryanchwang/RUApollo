@@ -9,7 +9,7 @@ CORS(app)
 
 # MongoDB connection setup
 uri = "mongodb+srv://ryanchwang:aO0oL36ytNgOpNyH@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
-client = MongoClient(uri)
+client = MongoClient(uri, tlsAllowInvalidCertificates=True)
 db = client["Subjects_Embedding"]  # Database with courses and embeddings
 
 # Initialize the Ollama model
@@ -89,6 +89,7 @@ def con_chat():
         return jsonify({"response": bot_response})
 
     except Exception as e:
+        print(str(e))
         return jsonify({"error": f"Error generating response: {str(e)}"}), 500
 
 if __name__ == "__main__":
