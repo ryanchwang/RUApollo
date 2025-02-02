@@ -28,6 +28,7 @@ class DeepSeekModel:
 
                         Provide a sample curriculum for 15 weeks.
                         Each week should include a specific topic or focus.
+                        Give topics for the whole week, not individual days.
                         Be sure to indicate the learning objectives for each week (what students should learn by the end of the week).
                         The plan should include suggested activities, readings, or assessments for each week.
                         Do not invent any fictional content beyond the outline; it should be realistic and based on typical course structures.
