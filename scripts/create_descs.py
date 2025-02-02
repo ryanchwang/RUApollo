@@ -19,7 +19,7 @@ uri = "mongodb+srv://ryanchwang:aO0oL36ytNgOpNyH@apollo.nsr4b.mongodb.net/?retry
 client = MongoClient(uri, tlsAllowInvalidCertificates=True)
 
 db = client["Subjects_Copy"]
-collections = db.list_collection_names()[1:]
+collections = db.list_collection_names()[::-1]
 
 def create_course_desc_and_outline(collection_name, stuff_in_collection):
     for course in stuff_in_collection:
@@ -30,7 +30,7 @@ def create_course_desc_and_outline(collection_name, stuff_in_collection):
         course_creds = course["courseCredit"]
         course_prereqs = course["prereqs"]
         
-        content = DeepSeekModel.generate_syllabus(course_id, course_title, course_creds, collection_name, course_prereqs, "")
+        content = DeepSeekModel.generate_syllabus(course_id, course_title, course_creds, collection_name, course_prereqs)
 
         db[collection_name].update_one({"_id": course["_id"]}, {"$push": {"content": content}})
 
