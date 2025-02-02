@@ -91,7 +91,7 @@ const Chatbot = () => {
           onKeyDown={handleKeyDown} // Add the event handler for "Enter" key
           placeholder="Type a message..."
         />
-        <button onClick={sendMessage}>Send</button>
+        <button style={styles.inputbutton} onClick={sendMessage}>Send</button>
       </div>
     </div>
   );
@@ -116,6 +116,8 @@ const styles = {
     border: "1px solid #ccc",
     padding: 10,
     overflowY: "auto",
+    backgroundColor: "#f1f1f1",
+    borderRadius: "8px"
   },
   messageRow: {
     marginBottom: 10,
@@ -125,12 +127,20 @@ const styles = {
     display: "flex",
     gap: 5,
     paddingTop: 10,
+    borderRadius: "8px"
   },
   input: {
     flex: 1,
     padding: 5,
     border: "1px solid #ccc",
     width: "70%",
+    borderRadius: "8px"
+  },
+  inputbutton: {
+    padding: 5,
+    border: "1px solid #ccc",
+    width: "30%",
+    borderRadius: "4px"
   },
 };
 
