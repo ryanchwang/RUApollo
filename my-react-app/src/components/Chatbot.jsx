@@ -32,13 +32,12 @@ const Chatbot = () => {
       return data.response;  // The response from the Flask API
     } catch (error) {
       console.error("Error:", error);
-      return response;
+      return "Sorry, there was an error. Please try again later."; // Return a fallback message
     }
   }
 
   // Send message and get chatbot response
   const sendMessage = async () => {
-
     // Clear input field
     setInput("");
     if (!input.trim()) return; // Don't send empty messages
