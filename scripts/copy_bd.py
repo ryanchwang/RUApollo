@@ -4,8 +4,8 @@ from pymongo import MongoClient
 uri = "mongodb+srv://ryanchwang:aO0oL36ytNgOpNyH@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
 client = MongoClient(uri)
 
-source_db = client["Subjects"]
-destination_db = client["Subjects_Copy"]
+source_db = client["Subjects_New"]
+destination_db = client["Subjects_Final"]
 
 # Loop through collections and copy data
 for collection_name in source_db.list_collection_names():

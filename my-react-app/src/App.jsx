@@ -29,7 +29,7 @@ const styles = {
   container: {
     display: "flex",              // Use flexbox layout
     flexDirection: "row",         // Align children horizontally (left, center, right columns)
-    height: "100vh",              // Full viewport height
+    height: "100%",              // Full viewport height
     padding: "10px",
   },
   leftColumn: {

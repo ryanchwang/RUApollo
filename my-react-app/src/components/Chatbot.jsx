@@ -42,7 +42,7 @@ const styles = {
   container: { 
     display: "flex", 
     flexDirection: "column", 
-    height: "100vh",  // ✅ Change from "100vh" to "100%"
+    height: "100%",  // ✅ Change from "100vh" to "100%"
     padding: 10 
   },
   title: { flex: 1, textAlign: "center", fontSize: "20px", fontWeight: "bold", padding: "10px 0" },
