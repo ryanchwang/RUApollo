@@ -12,7 +12,8 @@ class Generator:
         Combine information from DuckDuckGo and DeepSeek to generate a syllabus.
         """
         # Fetch additional information from DuckDuckGo related to the course
-        abstract_info = DuckDuckGoAPI.get_info(course_title)
+        #abstract_info = DuckDuckGoAPI.get_info(course_title)
+        abstract_info = "This is a Rutgers Course"
 
         if abstract_info:
             # Generate syllabus using DeepSeek
@@ -31,9 +32,7 @@ def main():
     syllabus_generator = Generator()
 
     course_title = input("Enter the course title: ")
-    #syllabus_generator.generateSyllabus(course_title)
-    abstract = DuckDuckGoAPI.get_info(course_title)
-    print(abstract)
+    syllabus_generator.generateSyllabus(course_title)
 
 if __name__ == "__main__":
     main()

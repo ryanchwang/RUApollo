@@ -8,9 +8,9 @@ class DuckDuckGoAPI:
         """
         Fetch information from DuckDuckGo related to the course title.
         """
-        base_url = '//httpsapi.duckduckgo.com/'
+        base_url = 'https://api.duckduckgo.com/'
         params = {
-            'q': "Rutgers course " + course_title,  # You can add 'site:rutgers.edu' to restrict to Rutgers-related info
+            'q': "Rutgers course " + str(course_title),  # You can add 'site:rutgers.edu' to restrict to Rutgers-related info
             'format': 'json',
             'no_html': 1,
             'no_redirect': 1,
@@ -20,7 +20,7 @@ class DuckDuckGoAPI:
 
         try:
             #response = requests.get(base_url, params=params)
-            response = requests.get(f"http://api.duckduckgo.com/?q=RutgersCourse{course_title}&format=json")
+            response = requests.get(f"http://duckduckgo.com/?q=Rutgers&format=json")
             response.raise_for_status()  # Raise an error for bad status codes
             print(response.json())
             data = response.json()
