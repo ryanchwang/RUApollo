@@ -96,9 +96,10 @@ const Chatbot = () => {
 
 const styles = {
   container: {
+    position: "fixed",
     display: "flex",
     flexDirection: "column",
-    height: "100%",
+    height: "80vh",
     padding: 10,
   },
   title: {

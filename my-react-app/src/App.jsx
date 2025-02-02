@@ -36,6 +36,10 @@ const styles = {
     flex: 2,                      // Takes 3/12 width
     backgroundColor: "#f3f3f3",   // Sidebar color
     padding: "10px",
+    position: "fixed",
+    overflowY: "auto",
+    width: "15vw",
+    height: "95vh"
   },
   middleColumn: {
     flex: 7,                      // Takes 6/12 width
@@ -46,5 +50,6 @@ const styles = {
     flex: 3,                      // Takes 3/12 width
     backgroundColor: "#e6f7ff",   // Chatbot color
     padding: "10px",
+    height: "95vh"
   },
 };
