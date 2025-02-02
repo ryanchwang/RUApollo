@@ -1,5 +1,3 @@
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
-
 export default function Sidebar({ selectedCourse, setSelectedCourse, courses }) {
   return (
     <aside className="col-span-2 bg-gray-100 p-4 rounded-2xl">
