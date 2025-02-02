@@ -47,10 +47,13 @@ const styles = {
     padding: "10px",
   },
   rightColumn: {
-    display: "flex", 
+    position: "fixed",
+    top: "15px",                        // Stick to the top
+    right: "15px",
     flex: 3,                      // Takes 3/12 width
     backgroundColor: "#e6f7ff",   // Chatbot color
     padding: "10px",
-    height: "95vh"
+    height: "95vh",
+    width: "15vw",
   },
 };

@@ -6,12 +6,14 @@ const Chatbot = () => {
     { id: 1, text: "Hello! How can I help?", author: "Chatbot" },
   ]);
   const [input, setInput] = useState("");
+  const [chatted, setChatted] = useState(false);
+  const api_url = !chatted ? `http://localhost:8000/chat_initial` : `http://localhost:8000/chat_continue`
 
   // Function to fetch response from Flask backend
   async function sendMessageToLLM(userMessage) {
     try {
-      console.log("tried to send")
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/chat`, {
+      console.log(api_url)
+      const response = await fetch(api_url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -26,15 +28,19 @@ const Chatbot = () => {
       }
 
       const data = await response.json();
+      setChatted(true);
       return data.response;  // The response from the Flask API
     } catch (error) {
       console.error("Error:", error);
-      return "Sorry, something went wrong.";
+      return response;
     }
   }
 
   // Send message and get chatbot response
   const sendMessage = async () => {
+
+    // Clear input field
+    setInput("");
     if (!input.trim()) return; // Don't send empty messages
 
     // Add user message to the chat
@@ -50,9 +56,6 @@ const Chatbot = () => {
       ...newMessages,
       { id: messages.length + 2, text: botResponse, author: "Chatbot" },
     ]);
-
-    // Clear input field
-    setInput("");
   };
 
   // Handle the "Enter" key press for submitting the message
@@ -127,6 +130,7 @@ const styles = {
     flex: 1,
     padding: 5,
     border: "1px solid #ccc",
+    width: "70%",
   },
 };
 
