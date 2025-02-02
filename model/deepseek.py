@@ -9,7 +9,8 @@ class DeepSeekModel:
         """
         Use DeepSeek-R1 model to generate a syllabus based on course title and abstract info.
         """
-        my_model = "deepseek-r1:1.5b"
+
+        my_model = "deepseek-r1:1.5B"
         my_prompt = f"Generate a syllabus for a Rutgers course titled '{course_title}'. Here's some background information: {abstract_info}"
         
         try:
@@ -19,3 +20,6 @@ class DeepSeekModel:
         except Exception as e:
             print(f"Error generating syllabus with DeepSeek: {e}")
             return None
+        
+
+print(DeepSeekModel.generate_syllabus("math", "at rutgers"))
