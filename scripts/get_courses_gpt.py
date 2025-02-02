@@ -23,6 +23,7 @@ client = AsyncIOMotorClient(uri)
 
 # Async MongoDB client function
 async def insert_course_data(scode, course_data, i):
+    print('trying to insert')
     db = client["Subjects_New"]
     if course_data:
         collection = db[scode + " - " + df["description"].iloc[i].strip()]
@@ -84,7 +85,7 @@ def scrape_data_for_subject(i, scode):
 # Main async function to handle concurrent scraping and MongoDB insertions
 async def main():
     # ThreadPoolExecutor for concurrent scraping
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=1) as executor:
         # Create a pool of WebDriver instances
         futures = []
 
