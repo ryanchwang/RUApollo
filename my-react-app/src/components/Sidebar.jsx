@@ -1,21 +1,19 @@
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
+import Dropdown from "./Dropdown";
 
-export default function Sidebar({ selectedCourse, setSelectedCourse, courses }) {
+export default function LeftBar() {
+  
+     const options = [
+      { value: "1", label: "Option 1" },
+      { value: "2", label: "Option 2" },
+      { value: "3", label: "Option 3" },
+    ];
+
   return (
-    <aside className="col-span-2 bg-gray-100 p-4 rounded-2xl">
-      <h2 className="text-lg font-semibold mb-4">Select Course</h2>
-      <Select value={selectedCourse} onValueChange={setSelectedCourse}>
-        <SelectTrigger className="w-full">
-          <SelectValue placeholder="Select a course" />
-        </SelectTrigger>
-        <SelectContent>
-          {courses.map((course) => (
-            <SelectItem key={course.code} value={course.code}>
-              {course.code} - {course.name}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
-    </aside>
+    <div>
+      <h1>React Dropdown Example</h1>
+      <Dropdown id={1} options={options} />
+      <Dropdown id={2} options={options} />
+      <Dropdown id={3} options={options} />
+    </div>
   );
-}
+};

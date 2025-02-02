@@ -60,7 +60,9 @@ def scrape_data_for_subject(i, scode):
     courseCredit_elements = soup.find_all(class_='courseCredits')
 
     for courseID, courseTitle, courseCredit in zip(courseID_elements, courseTitle_elements, courseCredit_elements):
-        if int(courseID.split(":")[1]) != int(scode):
+        print("-->", courseTitle.text.strip())
+        if int(courseID.text.strip().split(":")[1]) != int(scode):
+            print("codes", int(courseID.split(":")[1]), int(scode))
             return scode, [], i
         
         prereqs = driver.execute_script(f"return TooltipUtils.getPrereqTooltipContent(\"{courseID.text.strip()}.{i}.prereq\");")
