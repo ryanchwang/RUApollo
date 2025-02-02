@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const Dropdown = ({ id, options, activeDropdown, setActiveDropdown }) => {
+const Dropdown = ({ id, options, text, setActiveDropdown }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState(null);
   const dropdownRef = useRef(null);
@@ -18,13 +18,15 @@ const Dropdown = ({ id, options, activeDropdown, setActiveDropdown }) => {
     console.log(`Selected value from ${id}: ${value}`);
   };
 
+  const dropdownHeight = options.length * 60;
+
   return (
     <div
       className="dropdown-container"
       ref={dropdownRef}
       style={{
         width: "200px",
-        marginBottom: isOpen ? "150px" : "20px", // Push content below down
+        marginBottom: isOpen ? `${dropdownHeight + 40}px` : "20px", // Push content below down
         transition: "margin-bottom 0.3s ease",
         position: "relative",
       }}
@@ -44,7 +46,7 @@ const Dropdown = ({ id, options, activeDropdown, setActiveDropdown }) => {
           zIndex: 2,
         }}
       >
-        {selectedValue ? `Selected: ${selectedValue}` : `Dropdown ${id}`}
+        {selectedValue ? `Selected: ${selectedValue}` : text}
       </button>
       <div
         className={`dropdown-content ${isOpen ? "open" : ""}`}
@@ -57,7 +59,7 @@ const Dropdown = ({ id, options, activeDropdown, setActiveDropdown }) => {
           boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
           overflow: "hidden",
           transformOrigin: "top",
-          maxHeight: isOpen ? "200px" : "0px",
+          maxHeight: isOpen ? `${dropdownHeight}px` : "0px",
           opacity: isOpen ? "1" : "0",
           transition: "max-height 0.4s ease, opacity 0.3s ease",
           wordWrap: "break-word",
@@ -89,40 +91,4 @@ const Dropdown = ({ id, options, activeDropdown, setActiveDropdown }) => {
   );
 };
 
-const DropdownWrapper = () => {
-  const [activeDropdown, setActiveDropdown] = useState(null);
-
-  const options = [
-    { label: "Option 1", value: "option1" },
-    { label: "Option 2", value: "option2" },
-    { label: "Option 3", value: "option3" },
-  ];
-
-  return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-      <Dropdown
-        id="dropdown1"
-        options={options}
-        activeDropdown={activeDropdown}
-        setActiveDropdown={setActiveDropdown}
-      />
-      <Dropdown
-        id="dropdown2"
-        options={options}
-        activeDropdown={activeDropdown}
-        setActiveDropdown={setActiveDropdown}
-      />
-      <div
-        style={{
-          padding: "20px",
-          backgroundColor: "#f8f8f8",
-          transition: "margin-top 0.3s ease",
-        }}
-      >
-        This content moves down when dropdown opens!
-      </div>
-    </div>
-  );
-};
-
-export default DropdownWrapper;
+export default Dropdown;
