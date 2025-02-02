@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import MainContent from "./components/MainContent";
 import Chatbot from "./components/Chatbot";
-import LeftBar from "./components/Sidebar";
+import SideBar from "./components/Sidebar";
 
 export default function App() {
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  console.log("SelectedCourse:", selectedCourse);
+  const handleCourseSelect = (course) => {
+    console.log("Selected course:", course);
+    setSelectedCourse(course);
+  };
+
   return (
     <div style={styles.container}>
       {/* Sidebar (Left Column - Takes 3/12 width) */}
       <div style={styles.leftColumn}>
         <h2>Course Catalog</h2>
-        <LeftBar />
+        <SideBar onCourseSelect={handleCourseSelect} />
       </div>
 
       {/* Main Content (Middle Column - Takes 6/12 width) */}
       <div style={styles.middleColumn}>
-        <MainContent />
+        <MainContent selectedCourse={selectedCourse} />
       </div>
 
       {/* Chatbot (Right Column - Takes 3/12 width) */}
@@ -29,28 +36,30 @@ const styles = {
   container: {
     display: "flex",              // Use flexbox layout
     flexDirection: "row",         // Align children horizontally (left, center, right columns)
-    height: "100%",              // Full viewport height
+    height: "100vh",              // Full viewport height
     padding: "10px",
+    overflow: "hidden",           // Prevent overflow from fixed positioning
   },
   leftColumn: {
-    flex: 2,                      // Takes 3/12 width
+    flex: 3,                      // Takes 3/12 width
     backgroundColor: "#f3f3f3",   // Sidebar color
     padding: "10px",
-    position: "fixed",
-    overflowY: "auto",
-    width: "15vw",
-    height: "95vh"
+    height: "95vh",               // Full height except some padding
+    overflowY: "auto",            // Allows scrolling if content overflows
   },
   middleColumn: {
-    flex: 7,                      // Takes 6/12 width
+    flex: 6,                      // Takes 6/12 width
     backgroundColor: "white",     // Main content color
     padding: "10px",
+    height: "95vh",               // Ensures the content height is adjusted to match sidebar and chatbot
+    display: "flex",
+    justifyContent: "center",      // Centers content horizontally
+    alignItems: "center",          // Centers content vertically
   },
   rightColumn: {
-    display: "flex", 
     flex: 3,                      // Takes 3/12 width
     backgroundColor: "#e6f7ff",   // Chatbot color
     padding: "10px",
-    height: "95vh"
+    height: "95vh",               // Ensures the height is the same as sidebar
   },
 };

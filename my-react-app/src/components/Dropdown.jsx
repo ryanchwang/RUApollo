@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const Dropdown = ({ id, options, text, setActiveDropdown }) => {
+const Dropdown = ({ id, options, text, onSelect, setActiveDropdown }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState(null);
   const dropdownRef = useRef(null);
@@ -14,7 +14,12 @@ const Dropdown = ({ id, options, text, setActiveDropdown }) => {
   const handleSelect = (value) => {
     setSelectedValue(value);
     setIsOpen(false);
-    setActiveDropdown(null);
+    if (setActiveDropdown) {
+      setActiveDropdown(null);
+    }
+    if (onSelect) {
+      onSelect(value); // Fix: Ensure onSelect is defined before calling
+    }
     console.log(`Selected value from ${id}: ${value}`);
   };
 

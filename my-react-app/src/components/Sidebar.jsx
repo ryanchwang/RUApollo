@@ -2,8 +2,9 @@ import Dropdown from "./Dropdown";
 import React, { useState, useEffect } from 'react';
 
 
-export default function LeftBar() {
+export default function SideBar() {
   const [courseData, setCourseData] = useState([]);
+  const [activeDropdown, setActiveDropdown] = useState(null); // Track active dropdown
 
   // Fetch the collection names and course titles
   const fetchCourseTitles = async () => {
@@ -24,6 +25,12 @@ export default function LeftBar() {
     fetchCourseTitles(); // Fetch course titles when component mounts
   }, []);
 
+  // Define the onCourseSelect function
+  const onCourseSelect = (selectedCourse) => {
+    console.log("Course selected:", selectedCourse);
+    // You can add further logic here, such as setting the selected course in the state
+  };
+
   return (
     <div>
       {courseData.length === 0 ? (
@@ -35,6 +42,8 @@ export default function LeftBar() {
               id={item.collectionName}
               options={item.courseTitles}
               text={item.collectionName}
+              onSelect={onCourseSelect} // Ensure onSelect is passed
+              setActiveDropdown={setActiveDropdown} // Fix setActiveDropdown issue
             />
           </div>
         ))
