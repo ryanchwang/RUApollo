@@ -19,7 +19,7 @@ uri = "mongodb+srv://ryanchwang:aO0oL36ytNgOpNyH@apollo.nsr4b.mongodb.net/?retry
 client = MongoClient(uri, tlsAllowInvalidCertificates=True)
 
 db = client["Subjects_Copy"]
-collections = db.list_collection_names()[1:]
+collections = db.list_collection_names()[:]
 
 def create_course_desc_and_outline(collection_name, stuff_in_collection):
     for course in stuff_in_collection:

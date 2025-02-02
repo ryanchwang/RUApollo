@@ -38,7 +38,7 @@ class DeepSeekModel:
 
                         Begin with a brief, engaging introduction to the course, highlighting its importance and applications.
                         Focus on the real-world relevance of the course and what skills students will gain.
-                        Keep the description brief and exciting.'''
+                        Keep the description brief and exciting."""
         my_model = "qwen2:0.5b"
         my_prompt = f"""
 

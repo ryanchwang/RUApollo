@@ -23,7 +23,7 @@ client = AsyncIOMotorClient(uri)
 
 # Async MongoDB client function
 async def insert_course_data(scode, course_data, i):
-    db = client["Subjects"]
+    db = client["Subjects_New"]
     if course_data:
         collection = db[scode + " - " + df["description"].iloc[i].strip()]
         await collection.insert_many(course_data)
@@ -59,7 +59,11 @@ def scrape_data_for_subject(i, scode):
     courseCredit_elements = soup.find_all(class_='courseCredits')
 
     for courseID, courseTitle, courseCredit in zip(courseID_elements, courseTitle_elements, courseCredit_elements):
+        if int(courseID.split(":")[1]) != int(scode):
+            return scode, [], i
+        
         prereqs = driver.execute_script(f"return TooltipUtils.getPrereqTooltipContent(\"{courseID.text.strip()}.{i}.prereq\");")
+        
         if prereqs:
             prereqs = BeautifulSoup(prereqs, "html.parser")
             prereqs = prereqs.text.strip()
