@@ -68,16 +68,19 @@ const styles = {
   leftColumn: {
     position: "fixed",
     flex: 3,
-    backgroundColor: "#FFF5E1",
-    padding: "10px",
-    height: "95vh",
+    left:"0",
+    top:"0",
+    backgroundColor: "#e6f7ff",
+    paddingLeft: "15px",
+    height: "100vh",
     overflowY: "auto",
     width: "15vw",
-    borderRadius: "8px"
+    borderRadius: "8px",
+
   },
   middleColumn: {
     flex: 6,
-    backgroundColor: "white",
+    backgroundColor: "#ffffff",
     padding: "10px",
     height: "100vh",
     width: "100vw",
@@ -86,16 +89,15 @@ const styles = {
     alignItems: "center",
     overflowY: "auto",
     color: "#333",
-    backgroundColor: "#FBDBC6"
   },
   rightColumn: {
     position: "fixed",
-    top: "15px",
-    right: "15px",
+    top: "0px",
+    right: "0px",
     flex: 3,
-    backgroundColor: "#FFCDD2",
+    backgroundColor: "#e6f7ff",
     padding: "10px",
-    height: "95vh",
+    height: "100vh",
     width: "25vw",
     borderRadius: "8px"
   

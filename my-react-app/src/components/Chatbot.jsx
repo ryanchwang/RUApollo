@@ -115,7 +115,7 @@ const styles = {
     border: "1px solid #ccc",
     padding: 10,
     overflowY: "auto",
-    backgroundColor: "#f1f1f1",
+    backgroundColor: "#ffffff",
     borderRadius: "8px"
   },
   messageRow: {
@@ -139,7 +139,8 @@ const styles = {
     padding: 5,
     border: "1px solid #ccc",
     width: "30%",
-    borderRadius: "4px"
+    borderRadius: "4px",
+    backgroundColor: "#ffffff"
   },
 };
 
