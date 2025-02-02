@@ -76,13 +76,6 @@ const Chatbot = () => {
 };
 
 const styles = {
-<<<<<<< HEAD
-  container: { 
-    display: "flex", 
-    flexDirection: "column", 
-    height: "100%",  // ✅ Change from "100vh" to "100%"
-    padding: 10 
-=======
   container: {
     display: "flex",
     flexDirection: "column",
@@ -115,7 +108,6 @@ const styles = {
     flex: 1,
     padding: 5,
     border: "1px solid #ccc",
->>>>>>> 7b26f8fedbc9c0186b0cec5aed11044de073bd0f
   },
 };
 
