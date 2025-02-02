@@ -1,6 +1,3 @@
-# hackrusp25
+RU Apollo
 
-- music collab (spotify + apple music)
-- rutgers based maps
-- smart calendar
-- bluetooth heatmaps
+Created Rutgers Courseware using web-scraping + MongoDB, local LLM's, Node JS, and RAG implementation as well as a chatbot
