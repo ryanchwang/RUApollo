@@ -23,6 +23,7 @@ client = AsyncIOMotorClient(uri)
 
 # Async MongoDB client function
 async def insert_course_data(scode, course_data, i):
+    print('trying to insert')
     db = client["Subjects_New"]
     if course_data:
         collection = db[scode + " - " + df["description"].iloc[i].strip()]
