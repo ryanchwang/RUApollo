@@ -11,7 +11,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
 import time
-from deepseek import DeepSeekModel
+from deepseekcli import DeepSeekModel
 
 # MongoDB URI and connection
 #uri = "mongodb+srv://ryanchwang:aO0oL36ytNgOpNyH@apollo.nsr4b.mongodb.net/?retryWrites=true&w=majority&appName=Apollo"
@@ -23,6 +23,8 @@ collections = db.list_collection_names()[1:]
 
 def create_course_desc_and_outline(collection_name, stuff_in_collection):
     for course in stuff_in_collection:
+        if "content" in course:
+            continue
         course_id = course["courseID"]
         course_title = course["courseTitle"]
         course_creds = course["courseCredit"]
